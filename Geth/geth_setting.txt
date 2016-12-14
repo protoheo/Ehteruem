@@ -1,0 +1,5 @@
+geth --identity "MyNodeName" --genesis /blockchain/test01/testgenesis.json --rpc --rpcport "8545" --rpccorsdomain "*" --datadir "/blockchain/test01" --port "30303" --nodiscover --ipcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" --rpcapi  "db,eth,net,web3" --autodag --networkid 1900 --nat "any" --unlock 0,1 console
+
+
+--genesis /blockchain/test01/testgenesis.json  : Genesis 블록이 있는 위치
+--datadir "/blockchain/test01" : blockchain data 가 있는 위치
